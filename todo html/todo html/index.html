@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="glass-card">
+            <h1><i class="fas fa-tasks"></i> Nexus Tasks</h1>
+            
+            <form id="todo-form" class="todo-form">
+                <div class="form-group">
+                    <input type="text" id="item-name" placeholder="Task Title" required>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="form-group">
+                    <textarea id="item-desc" placeholder="Task Description" rows="3"></textarea>
+                    <span class="focus-border"></span>
+                </div>
+                <button type="submit" class="add-btn">
+                    <span>Add Task</span>
+                    <i class="fas fa-plus"></i>
+                </button>
+            </form>
+
+            <div class="todo-list" id="todo-list">
+                <!-- Tasks will be added here dynamically -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
